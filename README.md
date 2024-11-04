@@ -12,8 +12,8 @@ Features under active development, front-facing site features not yet useable.
 
 ![alt text](./assets/images/sample%201.png 'Sample Image 1')
 ![alt text](./assets/images/sample%202.png 'Sample Image 2')
+![alt text](./assets/images/sample%203.png 'Sample Image 3')
 
-<!-- ![alt text](./assets/images/sample%203.png 'Sample Image 3') -->
 <!-- ![alt text](./assets/images/sample%204.png 'Sample Image 4') -->
 
 ## Table of Contents
