@@ -31,7 +31,7 @@ N/A
 
 ## Usage
 
-To use this app, navigate to the home page on [Render]([render link here]). Everything else is still a work in progress, unfortunately. Features will be implemented in the coming week or so, but deadline has been reached for submission.
+To use this app, navigate to the home page on [Render](https://mvc-tech-blog-moik.onrender.com). Everything else is still a work in progress, unfortunately. Features will be implemented in the coming week or so, but deadline has been reached for submission.
 
 ## Contributing
 
