@@ -12,6 +12,19 @@
     <h1>
       Tech Blog
     </h1>
+    <div class="content-spacer"></div>
+    {{#if loggedIn}}
+    <button id="logout" class="btn">
+      Logout
+    </button>
+    {{else}}
+    <button class="btn">
+      Login
+    </button>
+        <button class="btn">
+      Signup
+    </button>
+    {{/if}}
   </header>
 
 <main>
@@ -20,7 +33,7 @@
 
 <footer>
   <h5>
-  ©2024 Cassidy Pagels
+    ©2024 Cassidy Pagels
   </h5>
 </footer>
 
