@@ -34,3 +34,7 @@ footer {
 
   background-color: sienna;
 }
+
+footer h5 {
+  margin-left: 20px;
+}
