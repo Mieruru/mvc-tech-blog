@@ -1,7 +1,25 @@
 const router = require('express').Router()
 const { User } = require('../../models')
 
-// POST new yser
+// GET all users
+router.get('/', async (req, res) => {
+  try {
+    // gather all user objects, exclude password
+    const userDb = await User.findAll({
+      attributes: {
+        exclude: ['password']
+      }
+    })
+
+    // return all users
+    res.json(userDb)
+
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
+
+// POST new user
 router.post('/', async (req, res) => {
   try {
 
