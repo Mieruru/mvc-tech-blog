@@ -1,5 +1,5 @@
 // import model
-const { User } = require('../models/User')
+const { User } = require('../models')
 
 // array of seed user data
 const seedUsers = [
