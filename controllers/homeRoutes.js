@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
 
     // return all posts, include user
     const postData = await Post.findAll({
-      include: [{ model: User }]
+      include: [{ model: User, attributes: { exclude: ['password'] } }]
     })
 
     // translate data into handlebars readable
