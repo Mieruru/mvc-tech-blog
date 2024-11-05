@@ -32,7 +32,7 @@ router.post('/', async (req, res) => {
 
     // save session info using new user object
     req.session.save(() => {
-      req.session.loggedIn = true
+      req.session.logged_in = true
       res.status(200).json(userDb)
     })
 
@@ -57,10 +57,21 @@ router.post('/login', async (req, res) => {
       return
     }
 
+    // check password
+    const passCheck = await userDb.checkPassword(req.body.password)
+
+    // throw bad request if password doesn't match
+    if (!passCheck) {
+      res.status(400).json({ message: `Incorrect email or password.` })
+      return
+    }
+
     // save session info using new user object
     req.session.save(() => {
-      req.session.loggedIn = true
+      req.session.logged_in = true
+      req.session.user_id = userDb.id
       res.status(200).json({ user: userDb, message: `Login successful.` })
+      res.redirect('/')
     })
   } catch (err) {
     res.status(500).json(err)
@@ -71,7 +82,7 @@ router.post('/login', async (req, res) => {
 router.post('logout', async (req, res) => {
 
   // terminate session if logged in
-  if (req.session.loggedIn) {
+  if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end()
     })

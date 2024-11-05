@@ -37,7 +37,7 @@ router.get('/register', async (req, res) => {
 
 // GET login route
 router.get('/login', async (req, res) => {
-  if (req.session.loggedIn) {
+  if (req.session.logged_in) {
     // redirect to homepage if logged in
     res.redirect('/')
     return
