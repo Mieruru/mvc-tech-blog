@@ -14,6 +14,16 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+a {
+  color: burlywood;
+}
+
+a:hover {
+  transition-duration: 0.4s;
+
+  color: blanchedalmond;
+}
+
 header {
   position: sticky;
 
@@ -27,6 +37,12 @@ header h1 {
   padding-left: 10px;
 
   color: burlywood;
+}
+
+header h1:hover {
+  transition-duration: 0.4s;
+
+  color: blanchedalmond;
 }
 
 .content-spacer {
@@ -48,12 +64,15 @@ header h1 {
 
 .btn:hover {
   transition-duration: 0.4s;
+
+  cursor: pointer;
   color: sienna;
   background-color: burlywood;
 }
 
 .btn:active {
   transition-duration: 0.2s;
+
   color: peru;
   border-color: burlywood;
   background-color: blanchedalmond;
