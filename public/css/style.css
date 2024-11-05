@@ -16,11 +16,11 @@ body {
 
 a {
   color: burlywood;
-  /* text-decoration: unset; */
 }
 
 a:hover {
   transition-duration: 0.4s;
+
   color: blanchedalmond;
 }
 
@@ -41,6 +41,7 @@ header h1 {
 
 header h1:hover {
   transition-duration: 0.4s;
+
   color: blanchedalmond;
 }
 
@@ -63,6 +64,7 @@ header h1:hover {
 
 .btn:hover {
   transition-duration: 0.4s;
+
   cursor: pointer;
   color: sienna;
   background-color: burlywood;
@@ -70,6 +72,7 @@ header h1:hover {
 
 .btn:active {
   transition-duration: 0.2s;
+
   color: peru;
   border-color: burlywood;
   background-color: blanchedalmond;
