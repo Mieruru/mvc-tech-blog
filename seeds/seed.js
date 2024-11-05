@@ -6,7 +6,7 @@ const sequelize = require('../config/connection')
 
 // import seed data
 const userData = require('./userData.js')
-// const postData = require('./postData.js')
+const postData = require('./postData.js')
 
 // seed database
 const seedDatabase = async () => {
@@ -14,7 +14,7 @@ const seedDatabase = async () => {
 
   await userData()
 
-  // await postData()
+  await postData()
 
   process.exit(0)
 }

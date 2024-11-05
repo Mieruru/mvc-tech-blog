@@ -13,15 +13,19 @@
       Tech Blog
     </h1>
     <div class="content-spacer"></div>
-    {{#if loggedIn}}
+    {{#if user}}
+    <a href="/logout">
     <button id="logout" class="btn">
       Logout
-    </button>
+    </button>    
+    </a>
     {{else}}
+    <a href="/login">
     <button class="btn">
       Login
     </button>
-        <button class="btn">
+    </a>
+      <button class="btn">
       Signup
     </button>
     {{/if}}

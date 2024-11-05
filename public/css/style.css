@@ -67,6 +67,48 @@ main {
   background-color: blanchedalmond;
 }
 
+.postCard {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+
+  border: 2px solid peru;
+  border-radius: 5px;
+}
+
+.postHeader {
+  color: sienna;
+  background-color: peru
+}
+
+.postHeader h3 {
+  margin: 5px;
+  padding-left: 5px;
+}
+
+.postBody {
+  color: sienna;
+  background-color: burlywood;
+}
+
+.postBody p {
+  margin: 5px;
+  padding-left: 10px;
+}
+
+.postFooter {
+
+  font-size: 12px;
+  font-style: italic;
+  color: burlywood;
+  background-color: peru;
+}
+
+.postFooter p {
+  margin: 2px;
+  padding-left: 5px;
+}
+
 footer {
   position: sticky;
   bottom: 0;
