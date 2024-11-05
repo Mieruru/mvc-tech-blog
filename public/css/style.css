@@ -80,16 +80,18 @@ header h1:hover {
 
 main {
   position: relative;
-
   flex: 1 1 auto;
+
+  justify-content: center;
 
   background-color: blanchedalmond;
 }
 
 .postCard {
+  margin: 5px;
+
   display: flex;
   flex-direction: column;
-  margin: 5px;
 
   border: 2px solid peru;
   border-radius: 5px;
@@ -116,7 +118,6 @@ main {
 }
 
 .postFooter {
-
   font-size: 12px;
   font-style: italic;
   color: burlywood;
@@ -129,7 +130,6 @@ main {
 }
 
 footer {
-  position: sticky;
   bottom: 0;
 
   display: flex;
@@ -142,4 +142,33 @@ footer {
 
 footer h5 {
   margin-left: 20px;
+}
+
+.mainContent {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginForm {
+  width: 600px;
+
+  text-align: center;
+}
+
+form {
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 0 10px;
+}
+
+form input {
+  margin: 10px;
 }
